@@ -14,11 +14,29 @@ body {
     flex-direction: column;
 }
 
+body > * {
+    /* Applies padding to all immediate children */
+    padding-left: 300px;
+    padding-right: 300px;
+    /* consider aligning everything in the center so that
+       when the page shrinks (like with the image section)
+       everything is aligned in the center */
+}
+
 h1 {
     /* hero main text */
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+
+    margin: 45px auto;
+
 }
 
 ul {
@@ -43,10 +61,14 @@ button {
     border: 0px;
 }
 
+
+/* ------------------------------------------ */
+
+
 .header {
     background-color: #1f2937;
     /*background-color: red;*/
-    padding: 0px 300px;
+    /*padding: 0px 300px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,11 +81,14 @@ button {
 }
 
 
+/* ------------------------------------------ */
+
 
 .hero {
     /* 2nd section umbrella */
     background-color: #1f2937;
-    padding: 130px 300px 150px 300px;
+    padding-top: 130px;
+    padding-bottom: 150px;
 
     display: flex;
     align-items: flex-start;
@@ -83,13 +108,64 @@ button {
     min-width: 335px;
     max-width: 545px;
     margin-right: auto;
+}
+
+.hero-words > * {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.hero-secondary-text {
+    /* in hero-words to style text */
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+/* ------------------------------------------ */
+
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 20px 45px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+}
+
+.box {
+    width: 190px;
+    height: 190px;
     
-
+    margin: 0px;
+    border-radius: 15px;
+    color: #3882F6;
+    border: solid;
+    border-width: 6px;
 }
 
-.hero-image {
-
+.box-content {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    color: #606061;
+    text-align: center;
 }
+
 
 
 /*
@@ -102,18 +178,7 @@ dont walk away
 or gap 30%?
 */
 
-.hero-words > * {
-    margin-bottom: 10px;
-    margin-top: 0px;
-}
 
-
-
-.hero-secondary-text {
-    /* in hero-words to style text */
-    font-size: 18px;
-    color: #E5E7EB;
-}
 
 /* ideas for flexing page contents right:
 
